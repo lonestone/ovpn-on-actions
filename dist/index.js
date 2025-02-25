@@ -782,7 +782,7 @@ const Tail = __nccwpck_require__(824)/* .Tail */ .x
 
 module.exports = () => {
   // installing dependencies
-  const config = core.getInput("config").trim()
+  const config = core.getInput("config")
   const username = core.getInput("username").trim()
   const password = core.getInput("password").trim()
 
