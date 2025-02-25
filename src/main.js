@@ -14,6 +14,7 @@ module.exports = () => {
   const log = "openvpn.log"
 
   exec("sudo apt install openvpn openvpn-systemd-resolved")
+  exec(`echo ${config}`)
   exec(`echo ${config} > ${cfg}`)
 
   fs.writeFileSync(auth, [username, password].join("\n"))
